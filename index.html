@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>judul</h1>
+        <p class="subtitle">tekan kartu untuk membuka kartu</p>
+        
+        <div class="cards-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>sub-judul 1</h2>
+                        <p>Click to open</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Material 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis iaculis ornare. Nulla consectetur et lectus et lacinia.</p>
+                        <button class="close-btn" onclick="event.stopPropagation(); closeCard(this.parentElement.parentElement)">×</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>sub-judul 2</h2>
+                        <p>Click to open</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Material 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis iaculis ornare. Nulla consectetur et lectus et lacinia.</p>
+                        <button class="close-btn" onclick="event.stopPropagation(); closeCard(this.parentElement.parentElement)">×</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>sub-judul 3</h2>
+                        <p>Click to open</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Material 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis iaculis ornare. Nulla consectetur et lectus et lacinia.</p>
+                        <button class="close-btn" onclick="event.stopPropagation(); closeCard(this.parentElement.parentElement)">×</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>sub-judul 4</h2>
+                        <p>Click to open</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Material 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis iaculis ornare. Nulla consectetur et lectus et lacinia.</p>
+                        <button class="close-btn" onclick="event.stopPropagation(); closeCard(this.parentElement.parentElement)">×</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" onclick="closeAllCards()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
